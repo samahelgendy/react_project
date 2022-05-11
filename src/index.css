@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: lucida sans;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+.margin-bottom {
+  margin-bottom: 20px;
+}
+
+.link {
+  display: block !important;
+  color: #222 !important;
+  text-decoration: none !important;
+  padding: 10px !important;
+  font-weight: bold !important;
+}
+
+.link:hover {
+  color: #eb5424 !important;
+}
+
+.in_check,
+.image_lab {
+  position: absolute;
+  top: 13px;
+  right: 25px;
+}
+
+.in_check {
+  display: none
+}
+
+.image_lab {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: url('../public/images/open.jpg') no-repeat;
+  background-size: cover;
+  padding: 20px;
+  cursor: pointer;
+}
+
+input:checked~.ul-list {
+  display: block;
+}
+
+@media (min-width : 992px) {
+  .image_lab {
+    display: none
+  }
+}
+
+.in_check:checked~.image_lab {
+  background: url('../public/images/close.jpg') no-repeat;
+  background-size: cover;
+}
+
+.homemain {
+  background: url("../public/images/home-bg.jpg") !important;
+  background-size: cover;
+}
+.active{
+color:#fff !important;
+background-color: #eb5424 !important ;
+}
+
+ .parent {
+  height: 2px;
+  clear: both;
+  background: #f8f8f8;
+  position: relative;
+  top: 5px
+}
+
+ .parent span {
+  background: #eb5424;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0
+}
+
+ .parent span.sp1 {
+  width: 100%;
+}
+
+ .parent span.sp2 {
+  width: 90%;
+}
+
+ .parent span.sp3 {
+  width: 80%;
+}
